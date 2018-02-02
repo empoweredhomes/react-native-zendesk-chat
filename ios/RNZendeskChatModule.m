@@ -32,7 +32,7 @@ RCT_EXPORT_METHOD(startChat:(NSDictionary *)options) {
   [self setVisitorInfo:options];
 
   dispatch_sync(dispatch_get_main_queue(), ^{
-    [ZDCChat startChat:nil] 
+    [ZDCChat startChat:nil];
      //{
 //       if (options[@"department"]) {
 //         config.department = options[@"department"];
